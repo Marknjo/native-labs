@@ -28,6 +28,7 @@ export default function TabLayout() {
           title: 'Tab One',
           tabBarIcon: ({ color }) => <TabBarIcon name='code' color={color} />,
           headerRight: () => (
+            /* @ts-expect-error: href is a valid prop */
             <Link href='/modal' asChild>
               <Pressable>
                 {({ pressed }) => (
